@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageSelectionScreen"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="42dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="50dp"
+        android:text="@string/select_image_film"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 1 строка -->
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/image1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/image2"
+                app:layout_constraintStart_toEndOf="@+id/image1"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/image3"
+                app:layout_constraintStart_toEndOf="@+id/image2"
+                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/image4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image1" />
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/image5"
+                app:layout_constraintStart_toEndOf="@+id/image4"
+                app:layout_constraintTop_toBottomOf="@+id/image2" />
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/image6"
+                app:layout_constraintStart_toEndOf="@+id/image5"
+                app:layout_constraintTop_toBottomOf="@+id/image3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
